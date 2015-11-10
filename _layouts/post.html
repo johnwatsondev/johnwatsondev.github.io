@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<article>
+  <section class="title">
+    <h2>{{ page.title }} </h2>
+  </section>
+
+  <section class="meta">
+  <span class="time">
+    <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date:"%Y-%m-%d" }}</time>
+  </span>
+  {% if page.tags %}
+  <span class="tags">
+    {% for tag in page.tags %}
+    <a href="/tags.html#{{ tag }}" title="{{ tag }}">#{{ tag }}</a>
+    {% endfor %}
+  </span>
+  {% endif %}
+  </section>
+
+  <section class="post">
+  {{ content }}
+  </section>
+
+  {% if page.guid %}
+  <div class="divider">
+    <span>
+    {% if page.previous %}
+    <a href="{{ page.previous.url }}"><i class="fa fa-chevron-left"></i></a>
+    {% else %}
+    <i class="fa fa-circle"></i>
+    {% endif %}
+    </span>
+    <!-- BEGIN comment icon
+    <span><a href="javascript:leave_comment();" id="leave_comment_link"><i class="fa fa-comment-o"></i></a></span>
+    <span><a href="javascript:collapse_comment();" id="collapse_comment_link" style="display:none;"><i class="fa fa-chevron-up"></i></a></span>
+      END comment icon -->
+
+    <span>
+    {% if page.next %}
+    <a href="{{ page.next.url }}"><i class="fa fa-chevron-right"></i></a>
+    {% else %}
+    <i class="fa fa-circle"></i>
+    {% endif %}
+    </span>
+  </div>
+
+  <!-- BEGIN comment -->
+  {% if site.disqus and page.comments == true %}
+    <section class="comment">
+      <div id="disqus_thread"></div>
+      {% include disqus_comments.html %}
+    </section>
+  {% endif %}
+  <!-- END comment -->
+  {% endif %}
+</article>
