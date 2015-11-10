@@ -1,7 +1,7 @@
 Feel free to fork.
 Please keep the author's [link](http://lhzhang.com/) in the bottom.
 
-# Credit
+### Credit
 
 [lhzhang](http://lhzhang.com/)
 [How to detemine if jekyll running locally or in production site](http://stackoverflow.com/questions/16680153/how-to-detemine-if-jekyll-running-locally-or-in-production-site/20587233#20587233)  
