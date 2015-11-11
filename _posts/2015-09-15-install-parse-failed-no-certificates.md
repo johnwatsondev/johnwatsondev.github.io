@@ -10,7 +10,7 @@ tags: [adb]
 
 When installing a new apk file faced "Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]" error.
 
-前两天一位同学传来两个作品，通过 ADB 命令安装，结果显示"Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]"，显然两个文件都没有签名。
+前两天一位同学传来两个作品，通过 ADB 命令安装，结果显示 "Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]"，显然两个文件都没有签名。
 
 谷歌之，找到了解决办法，记录一下：
 
