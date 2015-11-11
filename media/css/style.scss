@@ -148,12 +148,9 @@ footer {
   text-align: center;
   margin: 1em auto;
   a { color: #cccccc; &:hover { color: #999999; }; }
-
 }
 
 #tag_cloud { margin-bottom: 1em; }
-
-#tag_cloud a { &:hover { color: #333!important; }; }
 
 // gist
 .gist { font-size: 13px; line-height:1.6; }
