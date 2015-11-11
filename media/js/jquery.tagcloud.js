@@ -25,6 +25,14 @@
       }
       if (opts.color) {
         $(this).css({"color": tagColor(opts.color, colorIncr, weighting)});
+
+        $(this).on('mouseenter mouseout',function(event){
+          if(event.type == "mouseenter"){
+            $(this).css({"color": "#444"});
+          }else if(event.type == "mouseout"){
+            $(this).css({"color": tagColor(opts.color, colorIncr, weighting)});
+          }
+        });
       }
     });
   };
