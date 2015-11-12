@@ -1,14 +1,12 @@
 ---
 layout: post
-title: Remove footerView in onScroll()
+title: 在 ListView 的 onScroll() 中移除 footerView 失败
 guid: true
 comments: true
 categories:
   - android
 tags: [footerView]
 ---
-
-Remove listView's footerView in onScroll method throw _"Index Out Of Bounds Exception"_. Why? It's footerInfo data is not changed timely when ListView draw itself and children.
 
 最近优化之前写的 ListView 下拉刷新/加载更多 Demo，在 `onScroll()` 中移除 listView 的 footerView 时，抛出：`java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0`.
 

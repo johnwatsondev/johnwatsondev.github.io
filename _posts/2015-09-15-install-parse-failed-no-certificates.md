@@ -1,14 +1,12 @@
 ---
 layout: post
-title: Solve Failure INSTALL PARSE FAILED NO CERTIFICATES
+title: 安装 apk 遇到 INSTALL PARSE FAILED NO CERTIFICATES
 guid: true
 comments: true
 categories:
   - android
 tags: [adb]
 ---
-
-When installing a new apk file faced "Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]" error.
 
 前两天一位同学传来两个作品，通过 ADB 命令安装，结果显示 "Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES]"，显然两个文件都没有签名。
 
@@ -21,5 +19,5 @@ When installing a new apk file faced "Failure [INSTALL_PARSE_FAILED_NO_CERTIFICA
 3. 输入 `jarsigner -verify Test.apk` 验证是否签名成功
 4. 正常安装 apk
 
-####Credit 
+#### Credit
 [Android: Solution "Install Parse Failed No Certificates"](https://dzone.com/articles/android-solution-install-parse-1)
