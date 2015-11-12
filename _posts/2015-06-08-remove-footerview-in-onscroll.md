@@ -2,7 +2,7 @@
 layout: post
 title: 在 ListView 的 onScroll() 中移除 footerView 失败
 guid: true
-comments: true
+comments: false
 categories:
   - android
 tags: [footerView]
