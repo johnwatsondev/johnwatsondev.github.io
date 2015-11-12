@@ -53,6 +53,7 @@ def new_post(title)
 title: #{title}
 layout: post
 guid: urn:uuid:#{uuid}
+comments: false
 tags:
   - 
 ---

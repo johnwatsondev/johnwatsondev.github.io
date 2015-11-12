@@ -3,8 +3,6 @@ layout: post
 title: 安装 apk 遇到 INSTALL PARSE FAILED NO CERTIFICATES
 guid: true
 comments: false
-categories:
-  - android
 tags: [adb]
 ---
 

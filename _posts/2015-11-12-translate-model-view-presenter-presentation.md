@@ -5,8 +5,6 @@ guid: urn:uuid:5fd9acec-8cba-4c27-9b85-ae780e057ed5
 comments: true
 tags:
   - mvp
-categories:
-  - android
 ---
 
 原文：[model-view-presenter-presentation](http://www.slideshare.net/DarxVal/model-view-presenter-presentation)  
