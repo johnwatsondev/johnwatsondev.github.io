@@ -167,6 +167,7 @@ article {
   article .post img {
     max-width: 100%;
     display: block;
+    /* display: inline-block; */
     margin: .5em auto; }
   article .comment {
     margin: 3em 0; }
@@ -244,5 +245,22 @@ footer {
     color: #dd1144; }
   .like-wrapper .like-button.liked:hover {
     color: #999; }
+
+.video-container {
+    position: relative;
+    /* padding-bottom: 56.25%; */
+    padding-bottom: 52.25%;
+    padding-top: 0;
+    margin-left: 4em;
+    margin-right: 4em;
+    height: 0;
+    overflow: hidden; }
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
