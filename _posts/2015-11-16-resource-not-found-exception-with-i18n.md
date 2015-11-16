@@ -1,5 +1,5 @@
 ---
-title: 国际化配置后无法找到 R 资源
+title: 资源国际化引发的"血案"
 layout: post
 guid: urn:uuid:e58decc5-b50a-417d-aa8a-0926a16c345f
 comments: false
