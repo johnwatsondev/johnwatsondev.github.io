@@ -26,24 +26,22 @@ Caused by: android.content.res.Resources$NotFoundException: String resource ID #
 ```java
 tv.setText(R.string.p2refresh_pull_to_refresh);
 ```
-
-开始以为代码混淆问题，把该类防混淆之后再测试，依然报错。:(  
-
+### 原先配置
 项目资源设置策略为：`values` 下默认英文，`values-zh-rCN` 下为中文。  
 `p2refresh_pull_to_refresh` 只在中文资源中设置过。  
 ![only-set-in-values-zh-rCN](/media/files/2015/11/16/incomplete_resource.png)
 上图为鼠标放在代码资源上的 doc 提示。
 
+### 解决思路
+开始以为代码混淆问题，把该类防混淆之后再测试，依然报错。:(  
 之前在中文语言环境下测试已通过，今天把语言切换成英文就挂了。  
 自然联想到是不是找不到英文资源呢？
 
-### 解决思路
-
 猜想如下：  
 当前语言既为英文，系统会在 `values-en` 和 `values` 中找，肯定不会在 `values-zh-rCN` 下找。  
-不然，怎么会报错呢？抱着尝试的态度，在 `values` 中增加相应资源后问题解决。  
+不然，怎么会报错呢？抱着尝试的态度，在 `values` 中增加相应资源。  
 ![set-in-values-and-values-zh-rCN](/media/files/2015/11/16/complete_resource.png)
-如上图所示，系统找到了 `values` 中的值。
+如上图所示，系统找到了 `values` 中的值，问题解决。
 
 ### 师傅，等一等！
 各位老师傅，这就完了吗？  
