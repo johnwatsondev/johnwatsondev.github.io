@@ -1,5 +1,5 @@
 ---
-title: MVP介绍(译文)
+title: MVP 介绍(译文)
 layout: post
 guid: urn:uuid:5fd9acec-8cba-4c27-9b85-ae780e057ed5
 comments: true
@@ -38,20 +38,20 @@ tags:
 - 告诉 View 和 Model 对象去做什么 （presenter 就是辣个秘书）
 - 处理事件
 
-#### 假如做一个名叫 TaskIt 的 APP
+### 假如做一个名叫 TaskIt 的 APP
 
 - 增加任务
 - 获取一个任务列表
 - 详细查看一个任务 （包含修改和删除）
 
-#### 如何测试呢？
+### 如何测试呢？
 
 控制反转 （[中文](https://zh.wikipedia.org/wiki/控制反转) [英文](https://en.wikipedia.org/wiki/Inversion_of_control)）  
 你需要做的就是注入模拟对象代替具体对象来测试应用的一部分 （单元测试）
 
 Mock 和 Espresso
 
-#### 鸣谢
+### 鸣谢
 [nucleus](https://github.com/konmik/nucleus)  
 [android-testing](http://code-labs.io/codelabs/android-testing)  
 [幻灯片背景图](https://plus.google.com/u/0/photos/102898026333733818285/albums/6081914916274644193/6081914917317951522?pid=6081914917317951522&oid=102898026333733818285)

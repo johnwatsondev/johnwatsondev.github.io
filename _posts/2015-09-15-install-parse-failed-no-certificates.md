@@ -17,5 +17,5 @@ tags: [adb]
 3. 输入 `jarsigner -verify Test.apk` 验证是否签名成功
 4. 正常安装 apk
 
-#### Credit
+### Credit
 [Android: Solution "Install Parse Failed No Certificates"](https://dzone.com/articles/android-solution-install-parse-1)
