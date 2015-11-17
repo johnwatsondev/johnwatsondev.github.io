@@ -15,9 +15,11 @@ tags:
 括号内均为译者自己标注
 
 ### MVC 
+![mvc](/media/files/2015/11/15/mvc.png)
 优点和缺点？（挖坑，待填，网上资料很多，我没有认真思考比对过，所以不会随便引用。）
 
 ### MVP （继续挖坑... 没有深入比对市面上各种 MVP 架构，不敢妄言！）
+![mvp](/media/files/2015/11/15/mvp.png)
 
 #### Views
 - 不要和 widget.view 混淆 （界面的抽象）
@@ -39,6 +41,7 @@ tags:
 - 处理事件
 
 ### 假如做一个名叫 TaskIt 的 APP
+![task it](/media/files/2015/11/15/task_it.png)
 
 - 增加任务
 - 获取一个任务列表
