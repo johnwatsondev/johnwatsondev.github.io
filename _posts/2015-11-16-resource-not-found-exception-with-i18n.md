@@ -7,6 +7,9 @@ tags:
   - resource
 ---
 
+作者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+转载请注明出处 --- 有节操工程师必备品质~
+
 ### 前言
 以前碰到过类似的异常，我们想调用 `textview.setText(CharSequence text)`，但是传入了 **单纯的数字**，系统会调用 `textview.setText(int resid)` 方法 ，这样必然找不到资源。  
 解决办法很简单，把 **数字** 转换成 `String` 即可。

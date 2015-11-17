@@ -6,6 +6,9 @@ comments: false
 tags: [footerView]
 ---
 
+作者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+转载请注明出处 --- 有节操工程师必备品质~
+
 ### 问题
 最近优化之前写的 ListView 下拉刷新/加载更多 Demo，在 `onScroll()` 中移除 listView 的 footerView 时，抛出：`java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0`.
 
