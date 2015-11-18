@@ -12,7 +12,7 @@ tags:
 
 ### 来源
 这个问题源自最近要做获取本机图片和拍照的功能，本着不重复造轮子滴原则找到了 [PhotoPicker](https://github.com/donglua/PhotoPicker) 开源库，效果还不错，非常感谢作者！  
-读源码的过程中，发现该库只使用了一个权限 `android.permission.WRITE_EXTERNAL_STORAGE` ，为什么只声明写权限即可，读取权限不需要呢？  
+读源码的过程中，发现该库只使用了一条权限 `android.permission.WRITE_EXTERNAL_STORAGE` ，为什么只声明写权限即可，读取权限不需要呢？  
 各位有思考过吗？
 
 ### 官网解释
