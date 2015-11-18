@@ -73,3 +73,6 @@ tags:
 API 19 之前所有的应用能从外部存储读取数据(注意：此处的存储是指整个外部存储，不光你自己应用的，还有系统的和别人的)。  
 从 API 19 开始，应用在 getExternalFilesDir(String) 和 getExternalCacheDir() 方法返回的存储目录（应用特定的外部存储，你自己的地盘）下读写文件不需要此权限，而在 `getExternalStoragePublicDirectory()` 方法返回目录(外部存储的共享区域)下的文件，没有读取权限时无法访问。  
 关于运行时权限，请看本篇：[检查运行时权限工具类](http://www.johnwatsondev.com/2015/11/17/runtime-permission-util.html) 。
+
+### 遗留问题
+API 4.1 的开发者选项中，勾选 `Protect USB storage` 会有什么影响，后续更新，敬请期待！
