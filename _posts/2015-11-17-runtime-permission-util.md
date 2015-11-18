@@ -7,6 +7,9 @@ tags:
   - permission
 ---
 
+作者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+转载请注明出处 --- 有节操工程师必备品质~
+
 ### 前言
 在 6.0 上使用 [PhotoPicker](https://github.com/donglua/PhotoPicker) ，由于默认情况下应用权限是未通过的，所以出现问题。  
 

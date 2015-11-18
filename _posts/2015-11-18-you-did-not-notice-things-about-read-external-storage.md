@@ -7,6 +7,9 @@ tags:
   - permission
 ---
 
+作者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+转载请注明出处 --- 有节操工程师必备品质~
+
 ### 来源
 这个问题源自最近要做获取本机图片和拍照的功能，本着不重复造轮子滴原则找到了 [PhotoPicker](https://github.com/donglua/PhotoPicker) 开源库，效果还不错，非常感谢作者！  
 我没有使用 aar ，因为要自己最大程度定制嘛。:) 读源码的过程中，发现该库只使用了一个权限 `android.permission.WRITE_EXTERNAL_STORAGE` ，怀着好奇心，抛出一个问题：为什么只声明写权限即可，读取权限不需要呢？  
