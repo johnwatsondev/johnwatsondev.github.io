@@ -12,8 +12,8 @@ tags:
 
 ### 来源
 这个问题源自最近要做获取本机图片和拍照的功能，本着不重复造轮子滴原则找到了 [PhotoPicker](https://github.com/donglua/PhotoPicker) 开源库，效果还不错，非常感谢作者！  
-我没有使用 aar ，因为要自己最大程度定制嘛。:) 读源码的过程中，发现该库只使用了一个权限 `android.permission.WRITE_EXTERNAL_STORAGE` ，怀着好奇心，抛出一个问题：为什么只声明写权限即可，读取权限不需要呢？  
-带着这个问题搜索，有了本篇总结。
+读源码的过程中，发现该库只使用了一个权限 `android.permission.WRITE_EXTERNAL_STORAGE` ，为什么只声明写权限即可，读取权限不需要呢？  
+各位有思考过吗？
 
 ### 官网解释
 官网永远是我们最好的伙伴，没有之一。各位先来看[原文](http://developer.android.com/reference/android/Manifest.permission.html#READ_EXTERNAL_STORAGE)解释：  
@@ -32,7 +32,7 @@ tags:
 
 > Constant Value: "android.permission.READ_EXTERNAL_STORAGE"
 
-### 译文（略去废话版）
+### 译文
 任何声明了 `WRITE_EXTERNAL_STORAGE` 权限的应用都会隐式地获取到此权限。  
 此权限在 API 19 之后被加强了，在 API 19 之前，所有的应用能从外部存储读取数据(注意：此处的存储是指整个外部存储，不光你自己应用的，还有系统的和别人的)。  
 如果系统版本是 4.1 或者更高，那么恭喜你，你可以自己决定是否开放此权限，请打开 “保护 USB 存储”，它在 “设置” －－ “开发者选项”下面。
@@ -59,16 +59,15 @@ tags:
 当然后来在 6.0 上为何看不到，目前还不清楚，如果你查到原因了，请告诉我哈！
 
 ### KitKat 中的变化
-在 [Important Behavior Changes](http://developer.android.com/about/versions/android-4.4.html#Behaviors) 和 [App Permissions](http://developer.android.com/about/versions/android-4.4.html#Permissions) 中阐述了变化。  
-大意是：在 4.4 上，应用不能直接读取外部存储的共享文件，除非获取了读权限。由 `getExternalStoragePublicDirectory()` 方法返回目录(外部存储的共享区域)下的文件，没有读取权限时无法访问。但是可以在没有任何权限时(`WRITE_EXTERNAL_STORAGE` 和 `READ_EXTERNAL_STORAGE` 均不需要)，访问(读写)由 `getExternalFilesDir()` 方法返回的目录（应用特定的外部存储，你自己的地盘）下的文件。  
+[Important Behavior Changes](http://developer.android.com/about/versions/android-4.4.html#Behaviors) 和 [App Permissions](http://developer.android.com/about/versions/android-4.4.html#Permissions) 有阐述。  
+在 4.4 上，应用不能直接读取外部存储的共享文件，除非获取了读权限。由 `getExternalStoragePublicDirectory()` 方法返回目录(外部存储的共享区域)下的文件，没有读取权限时无法访问。但是可以在没有任何权限时(`WRITE_EXTERNAL_STORAGE` 和 `READ_EXTERNAL_STORAGE` 均不需要)，访问(读写)由 `getExternalFilesDir()` 方法返回的目录（应用特定的外部存储，你自己的地盘）下的文件。  
 
 ### Marshmallow 中运行时权限
 [Runtime Permissions](http://developer.android.com/about/versions/marshmallow/android-6.0-changes.html#behavior-runtime-permissions) 有说明。  
-大意为：用户可以在运行时决定是否授权给某个应用。类似与 iOS 上弹出对话框询问是否打开第三方的应用，手机主人真正当家做主啦。:)  
+用户可以在运行时决定是否授权给某个应用。类似与 iOS 上弹出对话框询问是否打开第三方的应用，手机主人真正当家做主啦。:)  
 在 6.0 及以上系统要在运行时判断是否获取了相应权限，根据用户的授权状态给出恰当的交互。更多信息请看 [Working with System Permissions](http://developer.android.com/training/permissions/index.html) 和 [Requesting Permissions at Run Time](http://developer.android.com/training/permissions/requesting.html) 。
 
 ### 总结
-其实就是译文的浓缩版：  
 如果已经声明了 `WRITE_EXTERNAL_STORAGE` 权限，那么不需要显示地声明 `READ_EXTERNAL_STORAGE` 权限。  
 API 19 之前所有的应用能从外部存储读取数据(注意：此处的存储是指整个外部存储，不光你自己应用的，还有系统的和别人的)。  
 从 API 19 开始，应用在 getExternalFilesDir(String) 和 getExternalCacheDir() 方法返回的存储目录（应用特定的外部存储，你自己的地盘）下读写文件不需要此权限，而在 `getExternalStoragePublicDirectory()` 方法返回目录(外部存储的共享区域)下的文件，没有读取权限时无法访问。  
