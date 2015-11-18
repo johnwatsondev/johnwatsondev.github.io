@@ -26,7 +26,8 @@ requires android.permission.READ_EXTERNAL_STORAGE, or grantUriPermission()
 
 ### 解释
 
-重点解释下 `checkPermissionGranted` 方法中的最后两个参数。  
+重点解释下 `checkPermissionGranted` 方法中的最后两个参数。
+
 + 当权限未被授予且需要向用户说明原因时，`ShowRationaleCallback` 回调函数会发出通知，在实现类的 `void needShow(final int requestCode)` 方法中自定义提示，弹出 Toast 或 对话框 等等。  
 + 布尔型的 `needRequestPermission` 参数是当权限未被授予且需要向用户说明原因时，是否直接帮你请求该权限，省去手动发起。
 
