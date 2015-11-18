@@ -79,5 +79,3 @@ this.post(new Runnable() {
 微小改动的奥秘在哪里呢？`View.post(Runnable action)` 方法的代码在主线程执行，当 ListView 移除 footerView 时，视图已经绘制完毕，再次绘制视图便没有问题。
 
 附上代码链接 [PtrListView.java](https://gist.github.com/johnwatsondev/5922a3be8bc2555bff93)
-
-<!-- {% gist johnwatsondev/5922a3be8bc2555bff93 %} -->
