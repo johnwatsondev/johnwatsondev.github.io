@@ -35,7 +35,7 @@ tags:
 如果系统版本是 4.1 或者更高，那么恭喜你，你可以自己决定是否开放此权限，请打开 “保护 USB 存储”，它在 “设置” －－ “开发者选项”下面。
 
 > 注意：开发者文档有时也很坑。。。我尝试在 6.0 下开启此选项，结果没找到。
-> 谷歌关键词 `Protect USB storage android`，找到[一篇报道](http://www.androidcentral.com/jelly-bean-brings-new-permission-along-read-external-storage)，通过文末的 [Android 4.1 APIs](http://developer.android.com/about/versions/android-4.1.html)，才总算找到理解这段话的钥匙。  
+> 谷歌关键词 `Protect USB storage android`，找到一篇[报道](http://www.androidcentral.com/jelly-bean-brings-new-permission-along-read-external-storage)，通过文末的 [Android 4.1 APIs](http://developer.android.com/about/versions/android-4.1.html)，才总算找到理解这段话的钥匙。  
 > 事实上，这个 “保护 USB 存储” 并不是在 4.1 之后一直存在，起码 Nexus 5 的 6.0 官方镜像没有。。。这不是重点，我们先接着翻译，后面详细讲解这个权限的前世今生。:)
 
 从 API 19 开始，应用在 `getExternalFilesDir(String)` 和 `getExternalCacheDir()` 方法返回的存储目录下读写文件不需要此权限。  
@@ -69,4 +69,4 @@ tags:
 如果已经声明了 `WRITE_EXTERNAL_STORAGE` 权限，那么不需要显示地声明 `READ_EXTERNAL_STORAGE` 权限。  
 API 19 之前所有的应用能从外部存储读取数据(注意：此处的存储是指整个外部存储，不光你自己应用的，还有系统的和别人的)。  
 从 API 19 开始，应用在 getExternalFilesDir(String) 和 getExternalCacheDir() 方法返回的存储目录（应用特定的外部存储，你自己的地盘）下读写文件不需要此权限，而在 `getExternalStoragePublicDirectory()` 方法返回目录(外部存储的共享区域)下的文件，没有读取权限时无法访问。  
-关于运行时异常，请看本篇：[检查运行时权限工具类](http://www.johnwatsondev.com/2015/11/17/runtime-permission-util.html) 。
+关于运行时权限，请看本篇：[检查运行时权限工具类](http://www.johnwatsondev.com/2015/11/17/runtime-permission-util.html) 。
