@@ -19,4 +19,6 @@ Android 版本碎片化导致原生开发比较艰难，你懂的，各种蛋＊
 INFO/chromium(6759): [INFO:CONSOLE(9)] "Not allowed to load local resource: content://com.testing.image/kitkat.png"
 ```
 
+[Kitkat-WebView](https://github.com/henrychuangtw/Kitkat-WebView)  
+[Android webview加载本地图片](http://blog.csdn.net/candyguy242/article/details/16947445)  
 [Android 4.4 WebView cannot load "content://" urls in html page](https://code.google.com/p/android/issues/detail?id=63033)
