@@ -19,6 +19,11 @@ Android 版本碎片化导致原生开发比较艰难，你懂的，各种蛋＊
 INFO/chromium(6759): [INFO:CONSOLE(9)] "Not allowed to load local resource: content://com.testing.image/kitkat.png"
 ```
 
+### 解决方案
+把图片压缩后，转换成 base64 格式，直接通过 Js 方法传给网页，直接通过 img 标签设置。  
+缺点：不适合显示大量图片。
+
+### 致谢
 [Kitkat-WebView](https://github.com/henrychuangtw/Kitkat-WebView)  
 [Android webview加载本地图片](http://blog.csdn.net/candyguy242/article/details/16947445)  
 [Android 4.4 WebView cannot load "content://" urls in html page](https://code.google.com/p/android/issues/detail?id=63033)
