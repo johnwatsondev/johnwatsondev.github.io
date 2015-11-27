@@ -62,6 +62,9 @@ blockquote, pre code {
   display: block;
   overflow: auto; }
 
+pre {
+  padding: .3em 0!important;}
+
 code {
   background-color: #f8f8f8;
   padding: 2px 5px;
@@ -151,7 +154,7 @@ ul.listing {
 article {
   margin: 2em 0; }
   article p {
-    padding: .7em 0; }
+    padding: .3em 0; }
   article .title {
     font-family: telexregular, Hiragino Sans GB, Microsoft YaHei, sans-serif; }
     article .title header #header h1 a, header #header h1 article .title a, article .title a, article .title .meta .tags a, article .meta .tags .title a {
