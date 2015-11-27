@@ -25,7 +25,7 @@ INFO/chromium(6759): [INFO:CONSOLE(9)] "Not allowed to load local resource: cont
 
 ```java
   ArrayList<Base64Photo> targetList = new ArrayList<>(event.getPicList().size());
-  String base64Str;//把图片转换后的 String
+  String base64Str;//编码后的图片内容
   for (String path : event.getPicList()) {
     base64Str= PictureUtil.bitmapToString(path);
     if (!TextUtils.isEmpty(base64Str)) {
@@ -34,8 +34,7 @@ INFO/chromium(6759): [INFO:CONSOLE(9)] "Not allowed to load local resource: cont
   }
 
   webview.loadUrl("javascript:showUserUploadPic(" + new Gson().toJson(targetList,
-    new TypeToken<ArrayList<Base64Photo>>() {
-  }.getType()) + ")");
+    new TypeToken<ArrayList<Base64Photo>>() {}.getType()) + ")");
 ```
 
 ```java
