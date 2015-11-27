@@ -23,6 +23,42 @@ INFO/chromium(6759): [INFO:CONSOLE(9)] "Not allowed to load local resource: cont
 把图片压缩后，转换成 base64 格式，直接通过 Js 方法传给网页，直接通过 img 标签设置。  
 缺点：不适合显示大量图片。
 
+```java
+  ArrayList<Base64Photo> targetList = new ArrayList<>(event.getPicList().size());
+  String base64Str;//把图片转换后的 String
+  for (String path : event.getPicList()) {
+    base64Str= PictureUtil.bitmapToString(path);
+    if (!TextUtils.isEmpty(base64Str)) {
+      targetList.add(new Base64Photo(path, base64Str));
+    }
+  }
+
+  webview.loadUrl("javascript:showUserUploadPic(" + new Gson().toJson(targetList,
+    new TypeToken<ArrayList<Base64Photo>>() {
+  }.getType()) + ")");
+```
+
+```java
+/**
+ * Js 端接收对象
+ */
+public class Base64Photo {
+  /**
+   * 图片路径
+   */
+  public String path;
+  /**
+   * 编码后的图片内容
+   */
+  public String base64;
+
+  public Base64Photo(String path, String base64) {
+    this.path = path;
+    this.base64 = base64;
+  }
+}
+```
+
 ### 致谢
 [Kitkat-WebView](https://github.com/henrychuangtw/Kitkat-WebView)  
 [Android webview加载本地图片](http://blog.csdn.net/candyguy242/article/details/16947445)  
