@@ -118,6 +118,4 @@ public class PermissionUtil {
 请参考 [Demo](https://github.com/johnwatsondev/PhotoPicker.git) 中的 [`MainActivity`](https://github.com/johnwatsondev/PhotoPicker/blob/master/photopickerdemo/src/main/java/me/iwf/PhotoPickerDemo/MainActivity.java) 。
 
 ### 更新
-开源社区很强大，已经有封装好的库可以用了。  
-[Dexter](https://github.com/Karumi/Dexter)  
-[Nammu](https://github.com/tajchert/Nammu)
+开源社区已经有封装好的库，例如 [Dexter](https://github.com/Karumi/Dexter) 和 [Nammu](https://github.com/tajchert/Nammu) 。
