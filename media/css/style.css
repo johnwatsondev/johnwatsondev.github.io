@@ -71,8 +71,14 @@ code {
   border: 1px dashed #e0e0e0;
   font-family: Fira Mono, monospace; }
 
-h1, h2 {
-  font-size: 1.4em; }
+/* h1, h2 { */
+  /* font-size: 1.4em; } */
+
+h1 { font-size: 1.8em!important; }
+h2 { font-size: 1.6em!important; }
+h3 { font-size: 1.4em!important; }
+h4 { font-size: 1.2em!important; }
+h5 { font-size: 1.1em!important; }
 
 time {
   font-family: Ubuntu, monospace; }

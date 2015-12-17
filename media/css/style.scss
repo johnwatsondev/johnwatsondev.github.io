@@ -44,8 +44,14 @@ a { text-decoration: none; color: #bb2222; &:hover { color: #dd1144; }; }
 blockquote { background-color: #f8f8f8; padding: 0 1em; border: 1px dashed #eee !important; border-color: #e0e0e0 !important; font-size: 13px; line-height: 1.6; display: block; overflow: auto; }
 pre code { @extend blockquote; }
 code { background-color: #f8f8f8; padding: 2px 5px; border: 1px dashed #e0e0e0; font-family: #{$monospace}; }
-h1, h2 { font-size: 1.4em; }
+/* h1, h2 { font-size: 1.4em; } */
 time { font-family: #{$time-font} }
+
+h1 { font-size: 1.8em!important; }
+h2 { font-size: 1.6em!important; }
+h3 { font-size: 1.4em!important; }
+h4 { font-size: 1.2em!important; }
+h5 { font-size: 1.1em!important; }
 
 pre {
   padding: .3em 0!important;}
