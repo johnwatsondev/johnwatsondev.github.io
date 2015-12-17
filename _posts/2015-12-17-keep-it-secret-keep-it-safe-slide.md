@@ -7,7 +7,7 @@ tags:
   - Android Dev Summit 2015
 ---
 
-原文：[Keep it Secret, Keep it Safe (Android Dev Summit 2015)](https://www.youtube.com/watch?v=fcWVV0Hafuk&index=4&list=PLWz5rJ2EKKc_Tt7q77qwyKRgytF1RzRx8)
+原文：[Keep it Secret, Keep it Safe (Android Dev Summit 2015)](https://www.youtube.com/watch?v=fcWVV0Hafuk&index=4&list=PLWz5rJ2EKKc_Tt7q77qwyKRgytF1RzRx8)  
 整理：[JohnWatsonDev](http://www.johnwatsondev.com)  
 转载请注明出处 --- 有节操工程师必备品质~
 
