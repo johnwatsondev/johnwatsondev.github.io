@@ -7,6 +7,9 @@ tags:
   - webview
 ---
 
+作者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+转载请注明出处 --- 有节操工程师必备品质~
+
 ### 问题背景
 公司 App 分用户端和工程师端，用户端用户体验要求较高，大部分功能用 Native 方式开发，而工程师端在分析利弊之后选择混合开发模式，即 Native 做壳，大部分功能放到 Web 页，Web 实现效果不理想的采用回调 Native 代替。  
 这是为何？难道工程师端体验不重要？  
