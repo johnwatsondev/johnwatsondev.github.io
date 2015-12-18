@@ -21,6 +21,6 @@ mail
 
 or follow
 
-> [weibo](http://weibo.com/johnwatsondev)
+> [@johnwatsondev](https://twitter.com/johnwatsondev)
 
 to reach me
