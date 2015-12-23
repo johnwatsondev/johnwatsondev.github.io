@@ -1,5 +1,5 @@
 ---
-title: [译] 是什么让一名程序员优秀
+title: (译) 是什么让一名程序员优秀
 layout: post
 guid: urn:uuid:2b5e080b-303a-472c-98fa-db4ffe9ae2ec
 comments: true

@@ -1,5 +1,5 @@
 ---
-title: [译] MVP 介绍
+title: (译) MVP 介绍
 layout: post
 guid: urn:uuid:5fd9acec-8cba-4c27-9b85-ae780e057ed5
 comments: true
