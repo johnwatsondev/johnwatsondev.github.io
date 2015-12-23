@@ -1,5 +1,5 @@
 ---
-title: MVP 缺失的纽带
+title: [译] MVP 缺失的纽带
 layout: post
 guid: urn:uuid:00974858-998d-4dbe-95a0-d770662a421d
 comments: true
