@@ -62,8 +62,11 @@ blockquote, pre code {
   display: block;
   overflow: auto; }
 
+blockquote {
+  margin: 1em 0; }
+
 pre {
-  padding: .3em 0!important;}
+  padding: .3em 0!important; }
 
 code {
   background-color: #f8f8f8;
