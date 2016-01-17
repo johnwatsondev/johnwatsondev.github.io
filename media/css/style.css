@@ -34,8 +34,8 @@ li ul, li ol {
   padding-left: 1em; }
 
 hr {
-  width: 4em;
   border: none;
+  margin: 0.3em 0 0.5em 0;
   border-top: 1px dashed #d0d0d0;
   border-bottom: 1px dashed #f9f9f9; }
 
@@ -79,6 +79,12 @@ h2 { font-size: 1.6em!important; }
 h3 { font-size: 1.4em!important; }
 h4 { font-size: 1.2em!important; }
 h5 { font-size: 1.1em!important; }
+
+.post h3 {margin-top: 0.6em!important; }
+.post h4 {margin-top: 0.4em!important; }
+.post h5 {margin-top: 0.2em!important; }
+
+.post dd {margin: 0 0 0 2em;}
 
 time {
   font-family: Ubuntu, monospace; }

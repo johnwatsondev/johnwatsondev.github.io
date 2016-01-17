@@ -7,6 +7,9 @@ tags:
   - app-cleaner
 ---
 
+作者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+转载请注明出处 --- 有节操工程师必备品质~
+
 ### 需求
 工程师出发后，需要每隔一分钟纪录一次工程师当前的位置，直到到达客户现场。
 
