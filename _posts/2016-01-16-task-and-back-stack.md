@@ -147,4 +147,5 @@ launchMode 标签中没有和它行为一致的值。
 
 ---
 
+[android:launchMode](http://developer.android.com/guide/topics/manifest/activity-element.html#lmode)  
 [Understand Android Activity's launchMode: standard, singleTop, singleTask and singleInstance](http://inthecheesefactory.com/blog/understand-android-activity-launchmode/en) [(译文)](http://droidyue.com/blog/2015/08/16/dive-into-android-activity-launchmode/)
