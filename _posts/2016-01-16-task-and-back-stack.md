@@ -18,7 +18,7 @@ tags:
 
 #### 返回栈
 
-返回栈和任务是一一对应的关系。
+返回栈和任务具有一一对应关系。
 
 一个任务中既可包含本应用的 Activity 也可包含其他应用中的 Activity 。大多数任务是在桌面或者启动器（Launcher）启动的。如果任务不存在（最近没有打开过），则创建一个新的任务，栈底是主 Activity 。
 
@@ -30,7 +30,7 @@ tags:
 
 #### 多任务
 
-当用户按下 Home 键或新启动一个任务时，原先的任务会进入后台状态。当进入后台状态时，任务中所有 Activity 是被 stop 掉的，任务的返回栈也保持原封不动，这个任务只是简单地失去焦点，另一个任务取代了它原先的位置。请看下图：
+当用户按下 Home 键或新启动一个任务时，原先的任务会进入后台状态。当进入后台状态时，任务中所有 Activity 是被 stop 掉的，任务的返回栈保持原封不动，这个任务只是简单地失去焦点，另一个任务取代了它原先的位置。请看下图：
 
 ![diagram_multitasking](/media/files/2016/01/16/diagram_multitasking.png)
 
@@ -54,7 +54,7 @@ tags:
 
 上面提到，当 Activity stop 时，系统默认会保存其状态。这种情况下，当用户返回前一个 Activity 时，用户界面完好如初。然而，我们能够并且应该主动通过回调方法保存 Activity 状态，以防 Activity 被销毁，而且必须重新创建。
 
-当系统 stop 了任务中的一个 Activity 时（比如新启动一个 Activity 或任务进入后台状态），如果系统需要回收内存的话，系统可能会完全销毁该 Activity 。当发生这种情况时，Activity 的状态信息会丢失。如果发生这种情况，系统仍然知道该 Activity 在返回栈中的位置，然是如果其到达栈顶时，系统必须 recreate 它（而不是 resume ）。为了不丢失用户的工作，我们应该在 Activity 中实现 [onSaveInstanceState()](http://developer.android.com/reference/android/app/Activity.html#onSaveInstanceState(android.os.Bundle\)) 回调方法主动保存状态。
+当系统 stop 了任务中的一个 Activity 时（比如新启动一个 Activity 或任务进入后台状态），如果系统需要回收内存的话，系统可能会完全销毁该 Activity 。当发生这种情况时，Activity 的状态信息会丢失。如果发生这种情况，系统仍然知道该 Activity 在返回栈中的位置，如果其到达栈顶，系统必须 recreate 它（而不是 resume ）。为了不丢失用户的工作，我们应该在 Activity 中实现 [onSaveInstanceState()](http://developer.android.com/reference/android/app/Activity.html#onSaveInstanceState(android.os.Bundle\)) 回调方法主动保存状态。
 
 更多关于如何保存 Activity 状态信息，请查看 [Activities](http://developer.android.com/guide/components/activities.html#SavingActivityState) 文档。
 
@@ -95,7 +95,7 @@ tags:
 <dt>`"singleTask"`</dt>
 
 <dd>
-系统创建新的任务，并且实例化新的对象作为 root 。然而，如果该 Activity 对象已经在单独的任务中存在，系统会通过调用 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 方法发送 intent 给此对象，而非创建新对象。同一时间点只能存在一个对象。
+系统创建新的任务，并且实例化新的对象作为 root 。然而，如果该 Activity 对象在单独的任务中已经存在，系统会通过调用 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 方法发送 intent 给此对象，而非创建新对象。同一时间点只能存在一个对象。
 
 > 注意：尽管 Activity 在新任务中启动，但是按下 Back 键仍然返回上一个 Activity 。
 </dd>

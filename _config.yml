@@ -1,6 +1,7 @@
 markdown: rdiscount
 highlighter: pygments
-permalink: /:year/:month/:day/:title.html
+# permalink: /:year/:month/:day/:title.html
+permalink: /:year/:month/:day/:title
 name: "The hardest thing in the world is to insist"
 markdown: rdiscount
 
