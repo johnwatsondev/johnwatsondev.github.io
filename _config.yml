@@ -6,7 +6,8 @@ name: "The hardest thing in the world is to insist"
 markdown: rdiscount
 
 author: "JohnWatsonDev"
-atom-baseurl: "http://www.johnwatsondev.com"
+atom-baseurl: "http://johnwatsondev.com"
+# atom-baseurl: "http://www.johnwatsondev.com"
 disqus: "johnwatsondev"
 
 navigations:
