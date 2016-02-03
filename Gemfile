@@ -2,11 +2,5 @@
 source 'https://rubygems.org'
 gem 'github-pages'
 
-# http://jekyllrb.com/docs/github-pages/
-#source 'https://rubygems.org
-
-#require 'json'
-#require 'open-uri'
-#versions = JSON.parse(open('https://pages.github.com/versions.json').read)
-
-#gem 'github-pages', versions['github-pages']
+# http://stackoverflow.com/questions/33439019/jekyll-serve-didnt-work-it-looks-like-you-dont-have-pygments-or-one-of-its-dep
+gem 'pygments.rb'

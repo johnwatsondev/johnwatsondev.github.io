@@ -32,11 +32,19 @@ $background-color: #f9f9f9;
 
 * { margin: 0; padding: 0; }
 body { font-size: 14px; font-family: #{$font}; color: #555; background-color: $background-color; -webkit-font-smoothing: antialiased; }
-ol, ul { list-style-position: inside; }
+ol, ul {
+  margin-bottom: .8em;
+  list-style-position: inside; }
 /* ol, ul { list-style-position: inside; padding-left: 2em; } */
 li { padding: .2em 0; }
-/* .post li ul { padding: .2em 0 .2em 2em; } */
-/* .post li ol { padding: .2em 0 .2em 2em; } */
+
+.post li ul {
+  margin: 0;
+  padding-left: 2em; }
+.post li ol {
+  margin: 0;
+  padding-left: 2em; }
+
 hr { width: 4em; border: none; border-top: 1px dashed #d0d0d0; border-bottom: 1px dashed #f9f9f9; }
 .center { text-align: center; }
 ::selection { color: #fff; background-color: #333; }
@@ -49,6 +57,10 @@ time { font-family: #{$time-font} }
 
 pre {
   padding: .3em 0!important;}
+
+pre code {
+  margin: 0 0 1em 0;
+}
 
 header {
   @include page;
@@ -97,7 +109,9 @@ ul.listing {
 
 article {
   margin: 2em 0;
-  p { padding: .7em 0; }
+  p {
+    margin: 0 0 0.8em 0;
+    padding: 0; }
   .title {
     font-family: #{$label-font};
     a { @extend a; color: #777; }
@@ -146,6 +160,10 @@ article {
   .divider:before { margin-left: -50%; text-align: right; }
   .divider:after { margin-left: 1%; }
 }
+
+blockquote p {
+  padding: .3em 0;
+  margin: 0; }
 
 footer {
   @include page;

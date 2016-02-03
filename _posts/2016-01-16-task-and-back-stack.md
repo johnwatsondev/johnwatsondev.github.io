@@ -78,69 +78,55 @@ tags:
 
 [launchMode](http://developer.android.com/guide/topics/manifest/activity-element.html#lmode) 标签可以设置四种指令，以便控制 Activity 如何进入任务。
 
-<dt>`"standard"` 默认模式</dt>
+- `standard` 默认模式
 
-<dd>
 系统在启动该 Activity 的任务中创建一个新对象，并且发送 intent 。它能够被多次创建新对象，每个对象能属于不同的任务，并且一个任务中可以有多个对象。
-</dd>
 
-<dt>`"singleTop"`</dt>
+- `singleTop`
 
-<dd>
 如果当前任务的顶部已经存在一个 Activity 的对象，系统将会通过调用 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 方法给该对象发送 intent ，而非创建新对象。它能够被多次创建新对象，每个对象可以属于不同的任务，并且一个任务可以拥有多个对象（只有当返回栈顶的 Activity 对象不是该 Activity 对象）。
 
-例如当前返回栈为 A-B-C-D ，D 在栈顶，现在从 D 要启动 D ，如果 D 是 `"standard"` 模式，那么会创建新对象，栈变为 A-B-C-D-D 。然而，如果 D 的启动模式为 `"singleTop"` ，已经存在的 D 对象通过 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 接收 intent ，因为其在栈顶，栈仍然是 A-B-C-D-D 。然而，如果是启动 B ，则创建新的 B 对象加入栈顶，即使它的启动模式为 `"singleTop"` 。
-</dd>
+例如当前返回栈为 A-B-C-D ，D 在栈顶，现在从 D 要启动 D ，如果 D 是 `standard` 模式，那么会创建新对象，栈变为 A-B-C-D-D 。然而，如果 D 的启动模式为 `singleTop` ，已经存在的 D 对象通过 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 接收 intent ，因为其在栈顶，栈仍然是 A-B-C-D-D 。但如果启动 B ，则创建新的 B 对象加入栈顶，即使它的启动模式为 `singleTop` 。
 
-<dt>`"singleTask"`</dt>
+- `singleTask`
 
-<dd>
 系统创建新的任务，并且实例化新的对象作为 root 。然而，如果该 Activity 对象在单独的任务中已经存在，系统会通过调用 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 方法发送 intent 给此对象，而非创建新对象。同一时间点只能存在一个对象。
 
 > 注意：尽管 Activity 在新任务中启动，但是按下 Back 键仍然返回上一个 Activity 。
-</dd>
 
-<dt>`"singleInstance"`</dt>
+- `singleInstance`
 
-<dd>
-和 `"singleTask"` 相同，除了该对象独占一个任务，该任务中有且仅有一个该 Activity 对象。任何被它启动的 Activity 对象会新启动一个单独的任务。
+和 `singleTask` 相同，除了该对象独占一个任务，该任务中有且仅有一个该 Activity 对象。任何被它启动的 Activity 对象会新启动一个单独的任务。
 
 无论新启动的 Activity 是否在新任务中，按下 Back 键总是为用户呈现前一个 Activity 。然而，如果你启动的 Activity 指定了 `singleTask` 启动模式，并且如果后台任务中已经存在该 Activity 的对象，那么整个任务都要被拉到前台。此时，栈顶包含了被拉到前台任务的所有 Activity 。下图展示了这种场景：
 
 ![diagram_backstack_singletask_multiactivity](/media/files/2016/01/16/diagram_backstack_singletask_multiactivity.png)
 
 > 注意：通过 [launchMode](http://developer.android.com/guide/topics/manifest/activity-element.html#lmode) 标签指定的启动模式能够被 intent 包含的 flag 所覆盖。
-</dd>
 
 ##### 使用 intent flags
 
-<dt>[FLAG_ACTIVITY_NEW_TASK](http://developer.android.com/reference/android/content/Intent.html#FLAG_ACTIVITY_NEW_TASK)</dt>
+* [FLAG_ACTIVITY_NEW_TASK](http://developer.android.com/reference/android/content/Intent.html#FLAG_ACTIVITY_NEW_TASK)
 
-<dd>
 在新任务中启动 Activity 。如果一个任务中已经运行了要启动的 Activity ，这个任务会被拉到前台，该 Activity 会通过 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 接收 intent 。
 
-该 flag 和 `"singleTask"` 具有相同的行为。
-</dd>
+该 flag 和 `singleTask` 具有相同的行为。
 
-<dt>[FLAG_ACTIVITY_SINGLE_TOP](http://developer.android.com/reference/android/content/Intent.html#FLAG_ACTIVITY_SINGLE_TOP)</dt>
+* [FLAG_ACTIVITY_SINGLE_TOP](http://developer.android.com/reference/android/content/Intent.html#FLAG_ACTIVITY_SINGLE_TOP)
 
-<dd>
 如果将要启动的 Activity 是当前的 Activity （在返回栈顶），那么当前 Activity 会通过 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 接收 intent 。而非创建新对象。
 
-该 flag 和 `"singleTop"` 具有相同的行为。
-</dd>
+该 flag 和 `singleTop` 具有相同的行为。
 
-<dt>[FLAG_ACTIVITY_CLEAR_TOP](http://developer.android.com/reference/android/content/Intent.html#FLAG_ACTIVITY_CLEAR_TOP)</dt>
+* [FLAG_ACTIVITY_CLEAR_TOP](http://developer.android.com/reference/android/content/Intent.html#FLAG_ACTIVITY_CLEAR_TOP)
 
-<dd>
 如果将要启动的 Activity 已经在当前任务中运行，那么不会创建新对象，在它顶部的所有 Activity 被销毁，intent 通过 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 发送到这个 Activity 中（现在已经到了栈顶）。
 
 launchMode 标签中没有和它行为一致的值。
 
 `FLAG_ACTIVITY_CLEAR_TOP` 通常和 `FLAG_ACTIVITY_NEW_TASK` 一起使用。当它们一起使用时，将会在另一个任务中寻找已存在的 Activity 对象，并且把它放在可以响应 intent 的位置上。
 
-> 注意：如果指定启动的 Activity 是 `"standard"` 模式，它也会被从栈中移出，并且在相同位置上重新创建新对象处理 intent ，这是由于当启动模式为 `"standard"` 时，总要为新 intent 创建新对象。
-</dd>
+> 注意：如果指定启动的 Activity 是 `standard` 模式，它也会被从栈中移出，并且在相同位置上重新创建新对象处理 intent ，这是由于当启动模式为 `standard` 时，总要为新 intent 创建新对象。
 
 
 ### 进一步了解

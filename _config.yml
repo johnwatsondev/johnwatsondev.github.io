@@ -1,9 +1,14 @@
-markdown: rdiscount
-highlighter: pygments
+markdown: kramdown
+kramdown:
+    input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+highlighter: rouge
 # permalink: /:year/:month/:day/:title.html
 permalink: /:year/:month/:day/:title
 name: "The hardest thing in the world is to insist"
-markdown: rdiscount
+
+gems:
+  - jekyll-gist
+  # - pygments.rb
 
 author: "JohnWatsonDev"
 atom-baseurl: "http://johnwatsondev.com"

@@ -1,5 +1,5 @@
 ---
-title: 资源国际化引发的"血案"
+title: 资源国际化引发的血案
 layout: post
 guid: urn:uuid:e58decc5-b50a-417d-aa8a-0926a16c345f
 comments: false
@@ -29,6 +29,7 @@ Caused by: android.content.res.Resources$NotFoundException: String resource ID #
 ```java
 tv.setText(R.string.p2refresh_pull_to_refresh);
 ```
+
 ### 原先配置
 项目资源设置策略为：`values` 下默认英文，`values-zh-rCN` 下为中文。  
 `p2refresh_pull_to_refresh` 只在中文资源中设置过。  

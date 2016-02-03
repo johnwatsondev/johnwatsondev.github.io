@@ -25,17 +25,23 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 ol, ul {
+  margin-bottom: .8em;
   list-style-position: inside; }
 
+/* ol, ul { list-style-position: inside; padding-left: 2em; } */
 li {
   padding: .2em 0; }
 
-li ul, li ol {
-  padding-left: 1em; }
+.post li ul {
+  margin: 0;
+  padding-left: 2em; }
+.post li ol {
+  margin: 0;
+  padding-left: 2em; }
 
 hr {
+  width: 4em;
   border: none;
-  margin: 0.3em 0 0.5em 0;
   border-top: 1px dashed #d0d0d0;
   border-bottom: 1px dashed #f9f9f9; }
 
@@ -54,6 +60,7 @@ a, header #header h1 a, article .title a, article .meta .tags a, article .divide
 
 blockquote, pre code {
   background-color: #f8f8f8;
+  margin: 0 0 1em 0;
   padding: 0 1em;
   border: 1px dashed #eee !important;
   border-color: #e0e0e0 !important;
@@ -62,35 +69,18 @@ blockquote, pre code {
   display: block;
   overflow: auto; }
 
-blockquote {
-  margin: 1em 0; }
-
-pre {
-  padding: .3em 0!important; }
-
 code {
   background-color: #f8f8f8;
   padding: 2px 5px;
   border: 1px dashed #e0e0e0;
   font-family: Fira Mono, monospace; }
 
-/* h1, h2 { */
-  /* font-size: 1.4em; } */
-
-h1 { font-size: 1.8em!important; }
-h2 { font-size: 1.6em!important; }
-h3 { font-size: 1.4em!important; }
-h4 { font-size: 1.2em!important; }
-h5 { font-size: 1.1em!important; }
-
-.post h3 {margin-top: 0.6em!important; }
-.post h4 {margin-top: 0.4em!important; }
-.post h5 {margin-top: 0.4em!important; }
-
-.post dd {margin: 0 0 0 2em;}
-
+/* h1, h2 { font-size: 1.4em; } */
 time {
   font-family: Ubuntu, monospace; }
+
+pre {
+  padding: 0.3em 0 !important; }
 
 header {
   margin: 0 auto;
@@ -167,9 +157,12 @@ ul.listing {
         color: #ccc; }
 
 article {
-  margin: 2em 0; }
+  margin: 2em 0;
+  /* .post { img { max-width: 100%; display: inline-block; margin: .5em auto; } } */
+  /* .post { iframe { max-width: 100%; display: block; margin: .5em auto; } } */ }
   article p {
-    padding: .3em 0; }
+    margin: 0 0 0.8em 0;
+    padding: 0; }
   article .title {
     font-family: telexregular, Hiragino Sans GB, Microsoft YaHei, sans-serif; }
     article .title header #header h1 a, header #header h1 article .title a, article .title a, article .title .meta .tags a, article .meta .tags .title a {
@@ -185,7 +178,6 @@ article {
   article .post img {
     max-width: 100%;
     display: block;
-    /* display: inline-block; */
     margin: .5em auto; }
   article .comment {
     margin: 3em 0; }
@@ -221,6 +213,10 @@ article {
     text-align: right; }
   article .divider:after {
     margin-left: 1%; }
+
+blockquote p {
+  padding: .3em 0;
+  margin: 0; }
 
 footer {
   margin: 0 auto;
@@ -263,22 +259,5 @@ footer {
     color: #dd1144; }
   .like-wrapper .like-button.liked:hover {
     color: #999; }
-
-.video-container {
-    position: relative;
-    /* padding-bottom: 56.25%; */
-    padding-bottom: 52.25%;
-    padding-top: 0;
-    margin-left: 4em;
-    margin-right: 4em;
-    height: 0;
-    overflow: hidden; }
-
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
 
 /*# sourceMappingURL=style.css.map */
