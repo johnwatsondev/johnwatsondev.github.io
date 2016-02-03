@@ -8,7 +8,6 @@ name: "The hardest thing in the world is to insist"
 
 gems:
   - jekyll-gist
-  # - pygments.rb
 
 author: "JohnWatsonDev"
 atom-baseurl: "http://johnwatsondev.com"
