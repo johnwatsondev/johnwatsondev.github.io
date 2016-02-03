@@ -7,7 +7,7 @@ tags:
   - resource
 ---
 
-作者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+作者：[JohnWatsonDev](http://johnwatsondev.com)  
 转载请注明出处 --- 有节操工程师必备品质~
 
 ### 前言

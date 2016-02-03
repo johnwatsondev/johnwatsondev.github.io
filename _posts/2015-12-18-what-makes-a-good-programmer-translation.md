@@ -8,7 +8,7 @@ tags:
 ---
 
 原文：[What Makes a Good Programmer?](http://blogs.msdn.com/b/peterhal/archive/2007/02/04/what-makes-a-good-programmer.aspx)  
-译者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+译者：[JohnWatsonDev](http://johnwatsondev.com)  
 转载请注明出处 --- 有节操工程师必备品质~
 
 我刚刚读完两篇关于 Scott Rosenberg 《梦断代码》的沙龙文章。他认为“[编程是困难的](http://www.salon.com/books/int/2007/02/03/leonard/?source=rss)”，并且用开发 [Chandler](https://en.wikipedia.org/wiki/Chandler_(software) 项目的经验来佐证他的观点。Scott 提出一个关于大型项目开发的通用问题 － [inconsistent terminology](http://www.salon.com/books/feature/2007/02/03/rosenberg/index.html) use across the software development team.

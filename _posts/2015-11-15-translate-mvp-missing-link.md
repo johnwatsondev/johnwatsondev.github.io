@@ -8,7 +8,7 @@ tags:
 ---
 
 原文：[MVP: The Missing Link](http://blog.sqisland.com/2015/11/mvp-missing-link.html)  
-译者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+译者：[JohnWatsonDev](http://johnwatsondev.com)  
 转载请注明出处 --- 有节操工程师必备品质~
 
 <div class="video-container"> <iframe width="560" height="315" src="https://www.youtube.com/embed/AoqL1PN8hCk" frameborder="0" allowfullscreen> </iframe> </div>

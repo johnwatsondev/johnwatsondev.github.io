@@ -8,13 +8,13 @@ tags:
 ---
 
 原文：[model-view-presenter-presentation](http://www.slideshare.net/DarxVal/model-view-presenter-presentation)  
-译者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+译者：[JohnWatsonDev](http://johnwatsondev.com)  
 转载请注明出处 --- 有节操工程师必备品质~
 
 ### 阅读须知
 括号内均为译者自己标注
 
-### MVC 
+### MVC
 ![mvc](/media/files/2015/11/15/mvc.png)
 优点和缺点？（挖坑，待填，网上资料很多，我没有认真思考比对过，所以不会随便引用。）
 

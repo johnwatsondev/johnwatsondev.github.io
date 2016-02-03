@@ -8,7 +8,7 @@ tags:
 ---
 
 原文：[A Little Architecture](http://blog.cleancoder.com/uncle-bob/2016/01/04/ALittleArchitecture.html)  
-译者：[JohnWatsonDev](http://www.johnwatsondev.com)  
+译者：[JohnWatsonDev](http://johnwatsondev.com)  
 转载请注明出处 --- 有节操工程师必备品质~
 
 我想成为一名软件架构师。
