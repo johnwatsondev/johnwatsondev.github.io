@@ -53,9 +53,9 @@ tags:
 
 ### 小结
 
-若保存临时状态，主要是 UI 状态和成员变量的值，我们应使用 [onSaveInstanceState()](http://developer.android.com/reference/android/app/Activity.html#onSaveInstanceState(android.os.Bundle\)) 保存，在 [onCreate()](http://developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle\)) 或 [onRestoreInstanceState()](http://developer.android.com/reference/android/app/Activity.html#onRestoreInstanceState(android.os.Bundle\)) 中恢复。
+* 若保存临时状态，主要是 UI 状态和成员变量的值，我们应使用 [onSaveInstanceState()](http://developer.android.com/reference/android/app/Activity.html#onSaveInstanceState(android.os.Bundle\)) 保存，在 [onCreate()](http://developer.android.com/reference/android/app/Activity.html#onCreate(android.os.Bundle\)) 或 [onRestoreInstanceState()](http://developer.android.com/reference/android/app/Activity.html#onRestoreInstanceState(android.os.Bundle\)) 中恢复。
 
-若保存持久化数据，比如写入 Sharedpreferences 、本地文件或数据库的数据。应当在 [onPause()](http://developer.android.com/reference/android/app/Activity.html#onPause(\)) 中保存。
+* 若保存持久化数据，比如写入 Sharedpreferences 、本地文件或数据库的数据。应当在 [onPause()](http://developer.android.com/reference/android/app/Activity.html#onPause(\)) 中保存。
 
 ### 相关资源
 
