@@ -1,5 +1,5 @@
 ---
-title: 任务和返回栈
+title: (译) 任务和返回栈
 layout: post
 guid: urn:uuid:5bb78698-6bd9-42ff-8b6a-43be0ea8a86e
 comments: true
@@ -7,7 +7,8 @@ tags:
   - task
 ---
 
-作者：[JohnWatsonDev](http://johnwatsondev.com)  
+原文：[Tasks and Back Stack](http://developer.android.com/guide/components/tasks-and-back-stack.html)  
+译者：[JohnWatsonDev](http://johnwatsondev.com)  
 转载请注明出处 --- 有节操工程师必备品质~
 
 ### 概念及行为解释
