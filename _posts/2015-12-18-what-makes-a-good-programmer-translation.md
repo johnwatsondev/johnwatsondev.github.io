@@ -11,8 +11,7 @@ tags:
 译者：[JohnWatsonDev](http://johnwatsondev.com)  
 转载请注明出处 --- 有节操工程师必备品质~
 
-我刚刚读完两篇关于 Scott Rosenberg 《梦断代码》的沙龙文章。他认为“[编程是困难的](http://www.salon.com/books/int/2007/02/03/leonard/?source=rss)”，并且用开发 [Chandler](https://en.wikipedia.org/wiki/Chandler_(software) 项目的经验来佐证他的观点。Scott 提出一个关于大型项目开发的通用问题 － [inconsistent terminology](http://www.salon.com/books/feature/2007/02/03/rosenberg/index.html) use across the software development team.
-At the same time he complements the members of the development team as being talented programmers. 这两种想法让我很困惑。一群高手程序员如何解决一个基本问题呢？解决此问题的程序员是否应当被称为“高手”？我期望的高手程序员到底该具备哪些技能呢？
+我刚刚读完两篇关于 Scott Rosenberg 《梦断代码》的沙龙文章。他认为“[编程是困难的](http://www.salon.com/books/int/2007/02/03/leonard/?source=rss)”，并且用开发 [Chandler](https://en.wikipedia.org/wiki/Chandler_(software)) 项目的经验来佐证他的观点。Scott 提出一个关于大型项目开发的通用问题 － [inconsistent terminology](http://www.salon.com/books/feature/2007/02/03/rosenberg/index.html) use across the software development team. At the same time he complements the members of the development team as being talented programmers. 这两种想法让我很困惑。一群高手程序员如何解决一个基本问题呢？解决此问题的程序员是否应当被称为“高手”？我期望的高手程序员到底该具备哪些技能呢？
 
 在阐述之前，我想声明我并不是贬低 Scott 和 Chandler 项目。Scott 给出了许多极好的观点，它们丰富了我的阅历。事实上，我见过的每个大型项目都存在 Scott 描述的问题。特别是在我之前工作过的超大型项目里。在这些困难面前，我和其他程序员一样是有罪的。但是 Scott 描述的示例对于讨论软件开发来讲是很好的。
 
