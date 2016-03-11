@@ -81,6 +81,7 @@ $ ssh -T git@git.coding.net
 这次之所以又在同样的问题上卡壳，根本在于上次只是照猫画虎式的快速解决问题，没有彻底弄清楚一些命令的用法和含义，导致解决重复问题。
 
 ### 参考资源
+[Mac下搭建Hadoop环境](http://arccode.net/2014/07/13/Mac%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E7%8E%AF%E5%A2%83/)  
 [git-add-remote-branch](https://stackoverflow.com/questions/11266478/git-add-remote-branch)  
 [delete-a-git-branch-both-locally-and-remotely](https://stackoverflow.com/questions/2003505/delete-a-git-branch-both-locally-and-remotely)  
-[Mac下搭建Hadoop环境](http://arccode.net/2014/07/13/Mac%E4%B8%8B%E6%90%AD%E5%BB%BAHadoop%E7%8E%AF%E5%A2%83/)
+[create-ssh-config-file-on-linux-unix](http://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/)
