@@ -1,7 +1,7 @@
 ---
 title: 请尽量远离贪婪之人
 layout: post
-guid: urn:uuid:337feef8-ace8-461f-8749-87c71e93cb72
+guid: urn:uuid:a168a249-d23f-4f57-84ab-0ab741ed139b
 comments: true
 tags:
   - misc
