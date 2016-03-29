@@ -193,7 +193,7 @@ While TLS on Android is secure by default it is possible for the developer to ov
 
 While trust checking should only be overwritten with secure logic, that is unfortunately often not the case.
 
-Throughout all of this you can refer to [security-ssl](developer.android.com/training/articles/security-ssl.html) for more details and the correct way to solve common problems include code samples.
+Throughout all of this you can refer to [security-ssl](https://developer.android.com/training/articles/security-ssl.html) for more details and the correct way to solve common problems include code samples.
 
 #### 3) Why is it done insecurely?
 Most of the insecure trust checking code tends to result from insecure code samples and advice on the internet that the developer finds and uses without properly understanding the code or what it is doing.
