@@ -87,7 +87,7 @@ tags:
 
 如果当前任务的顶部已经存在一个 Activity 的对象，系统将会通过调用 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 方法给该对象发送 intent ，而非创建新对象。它能够被多次创建新对象，每个对象可以属于不同的任务，并且一个任务可以拥有多个对象（只有当返回栈顶的 Activity 对象不是该 Activity 对象）。
 
-例如当前返回栈为 A-B-C-D ，D 在栈顶，现在从 D 要启动 D ，如果 D 是 `standard` 模式，那么会创建新对象，栈变为 A-B-C-D-D 。然而，如果 D 的启动模式为 `singleTop` ，已经存在的 D 对象通过 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 接收 intent ，因为其在栈顶，栈仍然是 A-B-C-D-D 。但如果启动 B ，则创建新的 B 对象加入栈顶，即使它的启动模式为 `singleTop` 。
+例如当前返回栈为 A-B-C-D ，D 在栈顶，现在从 D 要启动 D ，如果 D 是 `standard` 模式，那么会创建新对象，栈变为 A-B-C-D-D 。然而，如果 D 的启动模式为 `singleTop` ，已经存在的 D 对象通过 [onNewIntent()](http://developer.android.com/reference/android/app/Activity.html#onNewIntent(android.content.Intent\)) 接收 intent ，因为其在栈顶，栈仍然是 A-B-C-D。但如果启动 B ，则创建新的 B 对象加入栈顶，即使它的启动模式为 `singleTop` 。
 
 - `singleTask`
 
