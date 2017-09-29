@@ -1,0 +1,25 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+; [remote "origin"]
+	; url = https://github.com/johnwatsondev/johnwatsondev.github.io.git
+	; fetch = +refs/heads/*:refs/remotes/origin/*
+; [branch "master"]
+	; remote = origin
+	; merge = refs/heads/master
+
+[remote "github"]
+        url = git@github-jwdev:johnwatsondev/johnwatsondev.github.io.git
+            fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "coding"]
+        url = git@coding-jwdev:johnwatsondev/johnwatsondev.git
+            fetch = +refs/heads/*:refs/remotes/coding/*
+; [remote "all"]
+        ; url = git@github-jwdev:johnwatsondev/johnwatsondev.github.io.git
+        ; url = git@coding-jwdev:johnwatsondev/johnwatsondev.git
+[alias]
+        pushall= !sh -c \"git push github master:master && git push coding master:coding-pages\"
