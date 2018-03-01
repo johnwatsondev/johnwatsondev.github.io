@@ -1,6 +1,6 @@
 ---
 title: 赵峰 / 高级安卓开发工程师 / 5年经验
-layout: page
+layout: cv
 permalink: /mycv/
 ---
 
