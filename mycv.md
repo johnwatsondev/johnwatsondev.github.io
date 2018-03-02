@@ -1,8 +1,8 @@
 ---
-title: 赵峰 / 高级安卓开发工程师 / 5年经验
+title: 赵峰 / 安卓高级开发工程师 / 5年经验
 excerpt: 赵峰个人简历
 layout: cv
-permalink: /mycv/
+permalink: /mycv
 ---
 
 ## 个人信息
