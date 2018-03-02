@@ -13,6 +13,7 @@ permalink: /mycv
  - 手机：15513898286
  - 技术博客：[johnwatsondev.com](http://johnwatsondev.com)
  - Email：johnwatsondev.com@gmail.com
+ - 简历下载：[点我]({{ site.url }}/assets/赵峰-安卓高级开发-5年.pdf)
 
 ## 职业技能
 
