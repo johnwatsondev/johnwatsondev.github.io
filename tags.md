@@ -1,7 +1,7 @@
 ---
 title: tags
 layout: page
-permalink: /tags/
+permalink: /tags
 ---
 
 <div id='tag_cloud'>

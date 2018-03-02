@@ -18,15 +18,15 @@ navigations:
   - title: Archive
     class: fa fa-list-ul
     # href: /archive.html
-    href: /archive/
+    href: /archive
   - title: Tags
     class: fa fa-tags
     # href: /tags.html
-    href: /tags/
+    href: /tags
   - title: About
     class: fa fa-user
     # href: /about.html
-    href: /about/
+    href: /about
   # - title: Gallery
     # class: fa fa-film
     # href: http://foto.lhzhang.com

@@ -1,7 +1,7 @@
 ---
 title: archive
 layout: page
-permalink: /archive/
+permalink: /archive
 ---
 
 <ul class="listing">
