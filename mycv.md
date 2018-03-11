@@ -7,23 +7,23 @@ permalink: /mycv
 
 ## 个人信息
 
- - 男/1991
- - 教育经历：本科 山东工商学院 电子信息科学与技术 2009-2013
- - 期望薪资：面议
- - 手机：15513898286
- - 技术博客：[johnwatsondev.com](http://johnwatsondev.com)
- - Email：johnwatsondev.com@gmail.com
- - 简历下载：[点我]({{ site.url }}/assets/赵峰-安卓高级开发-5年.pdf)
+男/1991  
+教育经历：本科 山东工商学院 电子信息科学与技术 2009-2013  
+期望薪资：面议  
+手机：15513898286  
+技术博客：[johnwatsondev.com](http://johnwatsondev.com)  
+Email：johnwatsondev.com@gmail.com  
+简历下载：[点我]({{ site.url }}/assets/赵峰-安卓高级开发-5年.pdf)
 
 ## 职业技能
 
-- 比较理解 Java 面向对象设计五大原则
-- 阅读过 Framework 层 View、AMS、WMS 等模块源码
-- 阅读过 Retrofit、OkHttp、Glide 以及 Otto 等优秀开源项目源码
-- 熟练使用 React Native 编写应用，改造官方提供的原生控件，阅读过部分源码以及 Flex 布局引擎 Yoga 源码
-- 熟练封装非业务独立能力的组件以及业务相关组件，供给其他工程师使用
-- 熟练改造开源轮子达到业务要求
-- 能够使用 kotlin 编写业务代码
+比较理解 Java 面向对象设计五大原则  
+阅读过 Framework 层 View、AMS、WMS 等模块源码  
+阅读过 Retrofit、OkHttp、Glide 以及 Otto 等优秀开源项目源码  
+熟练使用 React Native 编写应用，改造官方提供的原生控件，阅读过部分源码以及 Flex 布局引擎 Yoga 源码  
+熟练封装非业务独立能力的组件以及业务相关组件，供给其他工程师使用  
+熟练改造开源轮子达到业务要求  
+能够使用 kotlin 编写业务代码
 
 ## 工作经历
 
