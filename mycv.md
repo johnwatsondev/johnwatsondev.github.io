@@ -39,7 +39,7 @@ Email：johnwatsondev.com@gmail.com
 封装模块化业务 UI 组件，以便服务端使用约定的参数动态配置业务界面。  
 部分表现层的纯展示型业务采用 React Native 开发，缩短开发周期，方便快速迭代。
 
-### 移动端负责人 [山西联康科技有限公司](http://www.sx-uh.com/) *2016.2-2016.11*
+### 移动端负责人 [山西联康科技有限公司](http://www.sx-uh.com/) *2016.3-2016.12*
 
 #### [山西挂号用户版](http://sj.qq.com/myapp/detail.htm?apkName=com.uh.rdsp)
 采用 Clean Architecture 架构来分离表现层、业务层和数据层。  
