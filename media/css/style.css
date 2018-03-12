@@ -31,7 +31,7 @@ ol, ul {
 
 /* ol, ul { list-style-position: inside; padding-left: 2em; } */
 li {
-  padding: .2em 0; }
+  /*padding: .2em 0;*/padding: 0; }
 
 .post li ul {
   margin: 0;
