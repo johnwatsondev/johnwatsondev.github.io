@@ -4,7 +4,7 @@ layout: post
 guid: urn:uuid:14519a52-66d4-4a1b-b9a4-438738b75772
 comments: true
 tags:
-  - react-native
+  - react native
 ---
 
 作者：[JohnWatsonDev](http://johnwatsondev.com)  

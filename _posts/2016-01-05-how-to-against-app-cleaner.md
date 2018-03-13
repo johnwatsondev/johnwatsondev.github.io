@@ -4,7 +4,7 @@ layout: post
 guid: urn:uuid:28de6d0f-5ac3-4cd0-8630-e83713eb923a
 comments: true
 tags:
-  - app-cleaner
+  - app cleaner
 ---
 
 作者：[JohnWatsonDev](http://johnwatsondev.com)  

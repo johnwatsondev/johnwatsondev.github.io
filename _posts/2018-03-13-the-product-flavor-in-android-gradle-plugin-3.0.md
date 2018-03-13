@@ -4,7 +4,7 @@ layout: post
 guid: urn:uuid:f239a5e2-701e-4447-bdea-523861ca2481
 comments: true
 tags:
-  - android-gradle-plugin
+  - android gradle plugin
 ---
 
 ## productFlavors 新版配置

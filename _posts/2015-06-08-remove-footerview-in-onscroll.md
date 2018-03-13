@@ -3,7 +3,7 @@ layout: post
 title: 在 ListView 的 onScroll() 中移除 footerView 失败
 guid: true
 comments: false
-tags: [footerView]
+tags: [ListView]
 ---
 
 作者：[JohnWatsonDev](http://johnwatsondev.com)  
