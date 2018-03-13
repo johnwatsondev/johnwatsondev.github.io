@@ -24,13 +24,14 @@
         $(this).css({"font-size": opts.size.start + (weighting * fontIncr) + opts.size.unit});
       }
       if (opts.color) {
-        $(this).css({"color": tagColor(opts.color, colorIncr, weighting)});
+        var tempTagColor = tagColor(opts.color, colorIncr, weighting);
+        $(this).css({"color": tempTagColor});
 
         $(this).on('mouseenter mouseout',function(event){
           if(event.type == "mouseenter"){
             $(this).css({"color": "#444"});
           }else if(event.type == "mouseout"){
-            $(this).css({"color": tagColor(opts.color, colorIncr, weighting)});
+            $(this).css({"color": tempTagColor});
           }
         });
       }

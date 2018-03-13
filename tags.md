@@ -23,7 +23,7 @@ permalink: /tags
 </ul>
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script> 
+<script src="/media/js/jquery.tagcloud.js" type="text/javascript" charset="utf-8"></script>
 <script language="javascript">
 $.fn.tagcloud.defaults = {
     size: {start: 1, end: 1, unit: 'em'},
