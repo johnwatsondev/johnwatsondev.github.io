@@ -28,6 +28,8 @@ permalink: /mycv
 
 ### 高级无线开发工程师 [口碑(杭州)信息技术有限公司](https://www.koubei.com) *2018.3-至今*
 
+#### [口碑](https://www.koubei.com/app)
+
 ### 安卓高级开发工程师 [浙江钱粒科技有限公司](https://www.fqgj.net/) *2017.2-2018.2*
 
 #### [钱粒账单](http://sj.qq.com/myapp/detail.htm?apkName=com.qianlizhangdan.app)
